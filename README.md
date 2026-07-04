@@ -1,59 +1,269 @@
-# Portfolio
+# 🚀 Shri Nivas | Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.18.
+A modern, responsive, and professional developer portfolio built using **Angular 21** showcasing my experience, technical skills, projects, certifications, and contact information.
 
-## Development server
+![Angular](https://img.shields.io/badge/Angular-21-DD0031?logo=angular)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-To start a local development server, run:
+---
+
+## 🌐 Live Demo
+
+🔗 https://your-netlify-url.netlify.app
+
+---
+
+# 📖 About
+
+This portfolio highlights my journey as a **.NET Full Stack Developer** with experience in developing scalable enterprise applications using modern Microsoft technologies.
+
+The application is designed with a clean UI, responsive layout, dark/light themes, and smooth animations to provide an engaging user experience.
+
+---
+
+# ✨ Features
+
+- Responsive Design
+- Modern Hero Section
+- Dark / Light Theme
+- Animated Typing Effect
+- Technical Skills Showcase
+- Professional Experience Timeline
+- Project Portfolio
+- Certifications Section
+- Contact Form
+- Copy Email Functionality
+- Resume Download
+- Social Media Links
+- Scroll to Top Button
+- Smooth Scrolling
+- Mobile Friendly Navigation
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+
+- Angular 21
+- TypeScript
+- HTML5
+- CSS3
+- Font Awesome
+
+### Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- Netlify
+
+---
+
+# 💻 Backend Skills
+
+- ASP.NET Core
+- C#
+- REST APIs
+- Entity Framework Core
+- SQL Server
+- Azure Functions
+- Azure App Services
+
+---
+
+# ☁ Cloud
+
+- Microsoft Azure
+- Azure Storage
+- Azure Portal
+- Azure Functions
+
+---
+
+# 📂 Project Structure
+
+```
+src
+│
+├── app
+│   ├── components
+│   │   ├── hero
+│   │   ├── navbar
+│   │   ├── about
+│   │   ├── skills
+│   │   ├── experience
+│   │   ├── projects
+│   │   ├── certifications
+│   │   ├── contact
+│   │   ├── footer
+│   │   └── scroll-top
+│   │
+│   ├── services
+│   ├── shared
+│   └── models
+│
+├── public
+│
+└── assets
+    ├── images
+    └── resume.pdf
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/portfolio.git
+```
+
+## Navigate
+
+```bash
+cd portfolio
+```
+
+## Install Packages
+
+```bash
+npm install
+```
+
+## Run
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
+
+# 📦 Production Build
 
 ```bash
-ng generate --help
+ng build --configuration production
 ```
 
-## Building
+---
 
-To build the project run:
+# 🚀 Deployment
+
+This portfolio is deployed using **Netlify**.
+
+To deploy:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Upload
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
+```
+dist/portfolio/browser
 ```
 
-## Running end-to-end tests
+to Netlify.
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+# 📸 Screenshots
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Home
 
-## Additional Resources
+- Hero Section
+- Animated Heading
+- Professional Introduction
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Skills
+
+- Technologies
+- Frameworks
+- Databases
+- Cloud
+
+## Experience
+
+- Professional Timeline
+- Roles & Responsibilities
+
+## Projects
+
+- Enterprise Applications
+- REST API Projects
+- Angular Applications
+
+## Contact
+
+- Email
+- LinkedIn
+- GitHub
+
+---
+
+# 📄 Resume
+
+The latest resume can be downloaded directly from the portfolio.
+
+---
+
+# 📬 Connect With Me
+
+**Email**
+
+📧 shrinivas71995@gmail.com
+
+**LinkedIn**
+
+https://www.linkedin.com/in/shrinivas3/
+
+**GitHub**
+
+https://github.com/your-github-username
+
+---
+
+# ⭐ Future Enhancements
+
+- Blog Section
+- Admin Dashboard
+- Project Filtering
+- Visitor Analytics
+- Testimonials
+- Multi-language Support
+- Progressive Web App (PWA)
+- AI Chat Assistant
+
+---
+
+# 🤝 Contributing
+
+Contributions, suggestions, and feedback are always welcome.
+
+Fork the repository and create a pull request.
+
+---
+
+# 📃 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+### Shri Nivas
+
+.NET Full Stack Developer
+
+Angular | ASP.NET Core | C# | SQL Server | Azure | REST APIs
+
+⭐ If you like this project, don't forget to star the repository.
