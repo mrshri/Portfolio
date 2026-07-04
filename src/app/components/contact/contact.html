@@ -1,0 +1,17 @@
+<section id="contact" class="section">
+  <h2 class="gradient-text">Contact Me</h2>
+
+  <form (ngSubmit)="submit()">
+    <input type="text" placeholder="Your Name" [(ngModel)]="form.name" name="name" />
+
+    <input type="email" placeholder="Email" [(ngModel)]="form.email" name="email" />
+
+    <textarea rows="6" placeholder="Message" [(ngModel)]="form.message" name="message"> </textarea>
+
+    <button class="send-btn">
+      <i class="fa-solid fa-paper-plane"></i>
+
+      Send Message
+    </button>
+  </form>
+</section>
