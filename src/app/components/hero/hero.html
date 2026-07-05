@@ -1,14 +1,12 @@
 <section class="hero">
   <div class="left">
-  <h1 class="hero-title">
-  Hi
-  <span class="wave">👋</span>
-  I'm
-  <br>
-  <span class="gradient-text">
-    Shri Nivas
-  </span>
-</h1>
+    <h1 class="hero-title">
+      Hi
+      <span class="wave">👋</span>
+      I'm
+      <br />
+      <span class="gradient-text"> Shri Nivas </span>
+    </h1>
 
     <h2>
       {{ current }}
@@ -22,36 +20,28 @@
     <div class="buttons">
       <a class="btn" href="#projects"> View Projects </a>
 
-      <a class="btn-outline" href="ShriNivas_Dotnet_Angular_Azure_4YOE.pdf" download> Download Resume </a>
+      <a class="btn-outline" href="ShriNivas_Dotnet_Angular_Azure_4YOE.pdf" download>
+        Download Resume
+      </a>
     </div>
   </div>
 
-<div class="social">
-  <a [href]="social.github" target="_blank">
-    <i class="fa-brands fa-github"></i>
-  </a>
+  <div class="social">
+    <a [href]="social.github" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
 
-  <a [href]="social.linkedin" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-<a
-(click)="copyEmail()"
-title="Copy Email">
+    <a [href]="social.linkedin" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a (click)="copyEmail()" title="Copy Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
 
-<i class="fa-solid fa-envelope"></i>
-
-</a>
-
-@if(copied){
-
-<span class="copied">
-
-Copied!
-
-</span>
-
-}
-</div>
+    @if (copied) {
+      <span class="copied"> Copied! </span>
+    }
+  </div>
 
   <div class="right">
     <img src="profile.png" alt="profile" />

@@ -1,8 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
 import { SOCIAL } from '../../shared/social-links';
 
 @Component({
@@ -15,65 +11,62 @@ export class Hero implements OnInit {
 
   social = SOCIAL;
 
- titles = [
-  '.NET Full Stack Developer',
-  'Angular Developer',
-  'ASP.NET Core Developer',
-  'Azure Cloud Enthusiast'
-];
+  titles = [
+    '.NET Full Stack Developer',
+    'Azure Cloud Enthusiast',
+  ];
 
-current = '';
+  current = '';
 
-private titleIndex = 0;
-private charIndex = 0;
+  copied = false;
 
-ngOnInit() {
-  this.startTyping();
-}
+  private titleIndex = 0;
+  private charIndex = 0;
+  private isDeleting = false;
 
-startTyping() {
-  const text = this.titles[this.titleIndex];
+  ngOnInit(): void {
+    this.typeEffect();
+  }
 
-  this.current = '';
-  this.charIndex = 0;
+  private typeEffect(): void {
 
-  const typing = setInterval(() => {
+    const fullText = this.titles[this.titleIndex];
 
-    this.current += text.charAt(this.charIndex);
-    this.charIndex++;
-
-    if (this.charIndex >= text.length) {
-
-      clearInterval(typing);
-
-      setTimeout(() => {
-
-        this.titleIndex =
-          (this.titleIndex + 1) % this.titles.length;
-
-        this.startTyping();
-
-      }, 1800);
-
+    if (this.isDeleting) {
+      this.current = fullText.substring(0, this.charIndex--);
+    } else {
+      this.current = fullText.substring(0, this.charIndex++);
     }
 
-  }, 90);
-}
-  copied=false;
+    let speed = this.isDeleting ? 35 : 70;
 
-copyEmail(){
+    // Finished typing
+    if (!this.isDeleting && this.charIndex > fullText.length) {
+      this.isDeleting = true;
+      speed = 1800; // Pause before deleting
+    }
 
-navigator.clipboard.writeText(
-'shrinivas71995@gmail.com'
-);
+    // Finished deleting
+    if (this.isDeleting && this.charIndex < 0) {
+      this.isDeleting = false;
+      this.titleIndex = (this.titleIndex + 1) % this.titles.length;
+      this.charIndex = 0;
+      speed = 250; // Small pause before next title
+    }
 
-this.copied=true;
+    setTimeout(() => this.typeEffect(), speed);
+  }
 
-setTimeout(()=>{
+  copyEmail(): void {
 
-this.copied=false;
+    navigator.clipboard.writeText('shrinivas71995@gmail.com');
 
-},2000);
+    this.copied = true;
 
-}
+    setTimeout(() => {
+      this.copied = false;
+    }, 2000);
+
+  }
+
 }
