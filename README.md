@@ -224,11 +224,6 @@ The latest resume can be downloaded directly from the portfolio.
 **LinkedIn**
 
 https://www.linkedin.com/in/shrinivas3/
-
-**GitHub**
-
-https://github.com/your-github-username
-
 ---
 
 # ⭐ Future Enhancements
