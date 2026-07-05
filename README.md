@@ -10,7 +10,7 @@ A modern, responsive, and professional developer portfolio built using **Angular
 
 ## 🌐 Live Demo
 
-🔗 https://your-netlify-url.netlify.app
+🔗https://portfolio-lmmc.vercel.app/
 
 ---
 
