@@ -1,23 +1,16 @@
 .hero{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    gap:80px;
-
+    gap:60px;
     min-height:100vh;
-
     padding:120px 8%;
+    overflow:hidden;
 }
-
 .left{
-
     flex:1;
+    min-width:600px;
 }
-
 .right{
 
     flex:1;
@@ -40,11 +33,20 @@ h1 {
 }
 
 h2{
-    font-size:28px;
-    font-weight:700;
-    color:#38BDF8;
-    margin:25px 0;
-    height:40px;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #38BDF8;
+
+    line-height: 1.4;
+    min-height: 45px;
+    height: auto;
+
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: unset;
+
+    margin: 20px 0 30px;
 }
 
 p {
