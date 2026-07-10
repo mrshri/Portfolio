@@ -2,11 +2,9 @@
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
-gap:25px;
-
-margin-top:40px;
+gap:30px;
 
 }
 
@@ -14,11 +12,15 @@ margin-top:40px;
 
 background:#1E293B;
 
+border-radius:20px;
+
 padding:30px;
 
-border-radius:15px;
+border:1px solid rgba(56,189,248,.15);
 
-transition:.3s;
+transition:.35s;
+
+text-align:center;
 
 }
 
@@ -26,12 +28,56 @@ transition:.3s;
 
 transform:translateY(-8px);
 
+border-color:#38BDF8;
+
+box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.cert-card i{
+
+font-size:48px;
+
+color:#38BDF8;
+
+margin-bottom:20px;
+
 }
 
 .cert-card h3{
 
-color:#38BDF8;
+color:white;
 
 margin-bottom:10px;
+
+}
+
+.cert-card p{
+
+color:#CBD5E1;
+
+}
+
+/* ---------- Light Theme ---------- */
+
+.light-theme .cert-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    box-shadow:0 12px 30px rgba(15,23,42,.08);
+
+}
+
+.light-theme .cert-card h3{
+
+    color:#111827;
+
+}
+
+.light-theme .cert-card p{
+
+    color:#475569;
 
 }

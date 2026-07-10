@@ -1,17 +1,39 @@
 <section id="skills" class="section">
-  <h2 class="gradient-text">Technical Skills</h2>
 
-  <div class="skills-grid">
-    <div class="skill-card" *ngFor="let skill of skills">
-      <div class="row">
-        <span class="skill-name">
-          {{ skill.name }}
-        </span>
-      </div>
+    <h2 class="section-title">
+        Technical Skills
+    </h2>
 
-      <div class="progress">
-        <div class="progress-fill" [style.width.%]="skill.value"></div>
-      </div>
+    <p class="section-subtitle">
+        Technologies I use to build scalable enterprise applications.
+    </p>
+
+    <div class="skills-grid">
+
+        @for(category of categories; track category){
+
+        <div class="skill-card">
+
+            <h3>{{category}}</h3>
+
+            <div class="skill-tags">
+
+                @for(skill of getSkills(category); track skill.name){
+
+                <span>
+
+                    {{skill.name}}
+
+                </span>
+
+                }
+
+            </div>
+
+        </div>
+
+        }
+
     </div>
-  </div>
+
 </section>

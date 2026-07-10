@@ -1,49 +1,83 @@
 <section class="hero">
-  <div class="left">
-    <h1 class="hero-title">
-      Hi
-      <span class="wave">👋</span>
-      I'm
-      <br />
-      <span class="gradient-text"> Shri Nivas </span>
-    </h1>
 
-    <h2>
-      {{ current }}
-    </h2>
+    <!-- LEFT -->
 
-    <p>
-      Building scalable enterprise applications using Angular, ASP.NET Core, C#, SQL Server, Azure
-      and REST APIs.
-    </p>
+    <div class="left">
 
-    <div class="buttons">
-      <a class="btn" href="#projects"> View Projects </a>
+        <h1 class="hero-title">
+            Hi
+            <span class="wave">👋</span>,
+            I'm
+            <br>
+            <span class="gradient-text">
+                Shri Nivas
+            </span>
+        </h1>
 
-      <a class="btn-outline" href="ShriNivas_Dotnet_Angular_Azure_4YOE.pdf" download>
-        Download Resume
-      </a>
+        <h2 class="typing-text">
+            {{ current }}
+        </h2>
+
+        <p>
+            Building scalable enterprise applications using Angular,
+            ASP.NET Core, C#, SQL Server, Azure and REST APIs.
+        </p>
+
+        <div class="buttons">
+
+            <a class="btn" href="#projects">
+                View Projects
+            </a>
+
+            <a
+                class="btn-outline"
+                href="ShriNivas_Dotnet_Angular_Azure_4YOE.pdf"
+                download>
+
+                Download Resume
+
+            </a>
+
+        </div>
+
+        <div class="social">
+
+            <a [href]="social.github" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a [href]="social.linkedin" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a
+                (click)="copyEmail()"
+                title="Copy Email">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+            @if(copied){
+
+            <span class="copied">
+                Copied!
+            </span>
+
+            }
+
+        </div>
+
     </div>
-  </div>
 
-  <div class="social">
-    <a [href]="social.github" target="_blank">
-      <i class="fa-brands fa-github"></i>
-    </a>
+    <!-- RIGHT -->
 
-    <a [href]="social.linkedin" target="_blank">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a (click)="copyEmail()" title="Copy Email">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
+    <div class="right">
 
-    @if (copied) {
-      <span class="copied"> Copied! </span>
-    }
-  </div>
+        <img
+            src="profile.png"
+            alt="Profile">
 
-  <div class="right">
-    <img src="profile.png" alt="profile" />
-  </div>
+    </div>
+
 </section>

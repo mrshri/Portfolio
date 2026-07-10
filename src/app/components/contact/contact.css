@@ -200,3 +200,39 @@ textarea::placeholder{
   opacity: .7;
   cursor: not-allowed;
 }
+
+/* ---------- Light Theme ---------- */
+
+.light-theme .contact-form{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    box-shadow:0 12px 30px rgba(15,23,42,.08);
+
+}
+
+.light-theme .input-group{
+
+    background:#F8FAFC;
+
+    border:1px solid #CBD5E1;
+
+}
+
+.light-theme input,
+
+.light-theme textarea{
+
+    color:#111827;
+
+}
+
+.light-theme input::placeholder,
+
+.light-theme textarea::placeholder{
+
+    color:#64748B;
+
+}

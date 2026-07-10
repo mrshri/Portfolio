@@ -6,25 +6,27 @@
 
   <div class="nav-right">
 
+    <!-- Hamburger -->
+    <button class="menu-btn" (click)="toggleMenu()">
+      ☰
+    </button>
+
     <ul [class.active]="menuOpen">
 
-      <li><a href="#about">About</a></li>
+      <li><a href="#about" (click)="closeMenu()">About</a></li>
 
-      <li><a href="#skills">Skills</a></li>
+      <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
 
-      <li><a href="#experience">Experience</a></li>
+      <li><a href="#experience" (click)="closeMenu()">Experience</a></li>
 
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
 
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
 
     </ul>
 
-    <button class="theme-btn"
-            (click)="toggleTheme()">
-
+    <button class="theme-btn" (click)="toggleTheme()">
       {{ theme.isDark() ? '☀️' : '🌙' }}
-
     </button>
 
   </div>
