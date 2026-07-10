@@ -37,21 +37,359 @@ background:linear-gradient(90deg,#38BDF8,#2563EB);
 -webkit-text-fill-color:transparent;
 }
 
-body.light-theme{
+/* ================= NAVBAR ================= */
 
-    background:#F8FAFC;
+.light-theme .navbar{
 
-    color:#111827;
+    background:white;
 
-    transition:0.3s;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
-body.light-theme .card,
+.light-theme .nav-right a{
+
+    color:#111827;
+}
+
+.light-theme .nav-right a:hover{
+
+    color:#2563EB;
+}
+
+.light-theme .logo{
+
+    color:#2563EB;
+}
+
+.light-theme .theme-btn{
+
+    background:#2563EB;
+    color:white;
+}
+/* body.light-theme .card,
 body.light-theme .project-card,
 body.light-theme .timeline-card,
 body.light-theme .cert-card{
 
-    background:white;
+    background:#111827;
 
     color:#111827;
+} */
+
+/* ==================================================
+   LIGHT THEME
+================================================== */
+
+.light-theme{
+
+    background:#F8FAFC;
+    color:#111827;
+
+}
+
+/* ======================
+   Navbar
+====================== */
+
+.light-theme .navbar{
+
+    background:#FFFFFF;
+    border-bottom:1px solid #E2E8F0;
+    box-shadow:0 8px 30px rgba(15,23,42,.08);
+
+}
+
+.light-theme .logo{
+
+    color:#2563EB;
+
+}
+
+.light-theme .nav-right a{
+
+    color:#1E293B;
+
+}
+
+.light-theme .nav-right a:hover{
+
+    color:#2563EB;
+
+}
+
+.light-theme .theme-btn{
+
+    background:#2563EB;
+    color:white;
+
+}
+
+.light-theme .theme-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ======================
+   Hero
+====================== */
+
+.light-theme .hero{
+
+    background:#F8FAFC;
+
+}
+
+.light-theme h1{
+
+    color:#111827;
+
+}
+
+.light-theme p{
+
+    color:#e3e5e9;
+
+}
+
+.light-theme .btn{
+
+    background:#2563EB;
+    color:white;
+
+}
+
+.light-theme .btn-outline{
+
+    border:2px solid #2563EB;
+    color:#2563EB;
+
+}
+
+.light-theme .btn-outline:hover{
+
+    background:#2563EB;
+    color:white;
+
+}
+
+/* ======================
+   Cards
+====================== */
+
+.light-theme .card,
+.light-theme .project-card,
+.light-theme .timeline-card,
+.light-theme .cert-card,
+.light-theme .skill-card{
+
+    background:#FFFFFF;
+    color:#d0d3da;
+
+    border:1px solid #E2E8F0;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.08);
+
+}
+
+.light-theme .project-card:hover,
+.light-theme .timeline-card:hover,
+.light-theme .cert-card:hover,
+.light-theme .skill-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#38BDF8;
+
+    box-shadow:0 18px 40px rgba(15,23,42,.12);
+
+}
+
+/* ======================
+   Text
+====================== */
+
+.light-theme .section-title{
+
+    color:#111827;
+
+}
+
+.light-theme .section-subtitle{
+
+    color:#64748B;
+
+}
+
+.light-theme .project-card h3,
+.light-theme .timeline-card h3,
+.light-theme .cert-card h3,
+.light-theme .skill-card h3{
+
+    color:#2563EB;
+
+}
+
+.light-theme .project-card p,
+.light-theme .timeline-card p,
+.light-theme .cert-card p{
+
+    color:#475569;
+
+}
+
+/* ======================
+   Skill Tags
+====================== */
+
+.light-theme .skill-tags span,
+.light-theme .tech-stack span{
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    border:1px solid #BFDBFE;
+
+}
+
+/* ======================
+   Featured Badge
+====================== */
+
+.light-theme .featured{
+
+    background:linear-gradient(90deg,#38BDF8,#2563EB);
+
+    color:white;
+
+}
+
+/* ======================
+   Buttons
+====================== */
+
+.light-theme .github-btn{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+.light-theme .github-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+.light-theme .demo-btn{
+
+    border:2px solid #2563EB;
+
+    color:#2563EB;
+
+}
+
+.light-theme .demo-btn:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+/* ======================
+   Inputs
+====================== */
+
+.light-theme input,
+.light-theme textarea{
+
+    background:#FFFFFF;
+
+    color:#111827;
+
+    border:1px solid #CBD5E1;
+
+}
+
+.light-theme input::placeholder,
+.light-theme textarea::placeholder{
+
+    color:#94A3B8;
+
+}
+
+.light-theme input:focus,
+.light-theme textarea:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+/* ======================
+   Footer
+====================== */
+
+.light-theme footer{
+
+    background:#FFFFFF;
+
+    border-top:1px solid #E2E8F0;
+
+}
+
+.light-theme footer p{
+
+    color:#64748B;
+
+}
+
+/* ======================
+   Experience
+====================== */
+
+.light-theme .timeline-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    color:#111827;
+
+}
+
+.light-theme .timeline-card h3{
+
+    color:#2563EB;
+
+}
+
+.light-theme .timeline-card h4{
+
+    color:#111827;
+
+}
+
+.light-theme .timeline-card p{
+
+    color:#f2f3f6;
+
+}
+
+.light-theme .timeline-card li{
+
+    color:#eef0f3;
+
+}
+
+.light-theme .timeline-date{
+
+    color:#2563EB;
+
+    font-weight:600;
+
 }

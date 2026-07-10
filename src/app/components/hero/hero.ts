@@ -12,9 +12,10 @@ export class Hero implements OnInit {
   social = SOCIAL;
 
   titles = [
-    '.NET Full Stack Developer',
-    'Azure Cloud Enthusiast',
-  ];
+  ".NET Core Full Stack Developer ",
+  "ASP.NET Core Developer ",
+  "Azure Cloud Enthusiast "
+];
 
   current = '';
 
@@ -43,7 +44,7 @@ export class Hero implements OnInit {
     // Finished typing
     if (!this.isDeleting && this.charIndex > fullText.length) {
       this.isDeleting = true;
-      speed = 1800; // Pause before deleting
+       speed = 1000;
     }
 
     // Finished deleting
@@ -51,7 +52,7 @@ export class Hero implements OnInit {
       this.isDeleting = false;
       this.titleIndex = (this.titleIndex + 1) % this.titles.length;
       this.charIndex = 0;
-      speed = 250; // Small pause before next title
+       speed = 150; 
     }
 
     setTimeout(() => this.typeEffect(), speed);
@@ -65,7 +66,7 @@ export class Hero implements OnInit {
 
     setTimeout(() => {
       this.copied = false;
-    }, 2000);
+    }, 1000);
 
   }
 

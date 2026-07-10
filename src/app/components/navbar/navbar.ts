@@ -21,4 +21,9 @@ export class Navbar {
   toggleTheme() {
     this.theme.toggleTheme();
   }
+
+  closeMenu() {
+    this.menuOpen = false;
+  }
+  
 }
