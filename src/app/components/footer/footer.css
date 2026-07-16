@@ -1,13 +1,23 @@
 footer{
+    width:110%;
+    background:#020617;
+    color:#94A3B8;
 
-padding:40px;
+    text-align:center;
 
-text-align:center;
+    padding:28px 20px;
 
-background:#020617;
+    margin-top:70px;
 
-margin-top:80px;
+    box-sizing:border-box;
+}
 
-color:#94A3B8;
+footer p{
+    margin:0;
+}
 
+.light-theme footer{
+    background:#ffffff;
+    color:#64748B;
+    border-top:1px solid #E2E8F0;
 }

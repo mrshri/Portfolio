@@ -8,12 +8,19 @@
 html{
 scroll-behavior:smooth;
 }
+html,
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:100%;
+}
 
 body{
-margin:0;
-font-family:Inter,sans-serif;
-background:#0F172A;
-color:white;
+    font-family:Inter,sans-serif;
+    background:#0F172A;
+    color:#fff;
+    overflow-x:hidden;
 }
 
 .section{
@@ -39,12 +46,7 @@ background:linear-gradient(90deg,#38BDF8,#2563EB);
 
 /* ================= NAVBAR ================= */
 
-.light-theme .navbar{
 
-    background:white;
-
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
-}
 
 .light-theme .nav-right a{
 
@@ -56,25 +58,7 @@ background:linear-gradient(90deg,#38BDF8,#2563EB);
     color:#2563EB;
 }
 
-.light-theme .logo{
 
-    color:#2563EB;
-}
-
-.light-theme .theme-btn{
-
-    background:#2563EB;
-    color:white;
-}
-/* body.light-theme .card,
-body.light-theme .project-card,
-body.light-theme .timeline-card,
-body.light-theme .cert-card{
-
-    background:#111827;
-
-    color:#111827;
-} */
 
 /* ==================================================
    LIGHT THEME
